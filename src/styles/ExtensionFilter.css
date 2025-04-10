@@ -1,0 +1,29 @@
+.extension-filter__container{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.extension-filter__container button {
+    padding: .5rem 1rem;
+    border-radius: 25px;
+    min-width: 50px;
+    background: var(--secondary-background);
+}
+
+.extension-filter__container button:hover {
+    background-color: var(--hover-background);
+    color: var(--text-color-p); /* opcional, para mejor contraste */
+}
+.extension-filter__container button:focus {
+    box-shadow: 0 0 0 1px var(--medium-red);
+    border: 1px solid var(--background);
+}
+.extension-filter__container button.active {
+    background-color: var(--medium-red);
+    color: white; /* opcional, para mejor contraste */
+  }
+
+@media (max-width: 600px) {}
+/*   

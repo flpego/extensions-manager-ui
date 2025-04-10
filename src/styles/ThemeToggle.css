@@ -27,7 +27,8 @@
 }
 
 .theme-toggle__switch-container button:focus {
-    border: 1px solid var(--dark-red);  
+    box-shadow: 0 0 0 1px var(--medium-red);
+    border: 1px solid var(--background);
 
 }
 

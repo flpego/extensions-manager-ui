@@ -6,11 +6,6 @@ const Home = () => {
   return (
     <div>
       <ThemeToggle />
-      <div>
-        <h2>Extensions List</h2>
-        <ExtensionFilter />
-
-      </div>
       <ExtensionList />
     </div>
   )

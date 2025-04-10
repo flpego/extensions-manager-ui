@@ -1,7 +1,31 @@
-.extension__list-container{ 
-    display: flex;
+.extension__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5rem 0 2rem 0;
+}
+
+.extension__list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 1.5rem;
+}
+
+
+@media (max-width: 1200px) {
+  .extension__list-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .extension__list-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .extension__header {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
+    padding: 2rem;
+  }
 }

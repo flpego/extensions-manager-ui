@@ -1,14 +1,13 @@
-import Logo from "../assets/images/logo.svg?react";
-import IconMoon from "../assets/images/icon-moon.svg?react";
-import IconSun from "../assets/images/icon-sun.svg?react";
-import "../styles/ThemeToggle.css";
+import Logo from "../../public/images/logo.svg?react";
+import IconMoon from "../../public/images/icon-moon.svg?react";
+import IconSun from "../../public/images/icon-sun.svg?react";
 import { useEffect, useState } from "react";
 const ThemeToggle = () => {
 
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    const app = document.querySelector("#app");
+    const app = document.querySelector("html");
     app.setAttribute("data-theme", theme);
   }, [theme]);
 

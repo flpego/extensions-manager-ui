@@ -4,6 +4,7 @@ import ExtensionCard from "./ExtensionCard"
 import "../styles/ExtensionList.css"
 import ExtensionFilter from "./ExtensionFilter"
 
+
 const ExtensionList = () => {
 
   const [extensions, setExtensions] = useState([])
@@ -14,7 +15,6 @@ const ExtensionList = () => {
     const fetchExtensions = async () => {
       try {
         const data = await fetchData();
-        console.log(data);
         setExtensions(data);
       } catch (error) {
         console.error('Error fetching data:', error);

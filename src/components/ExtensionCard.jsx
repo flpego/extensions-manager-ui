@@ -12,7 +12,7 @@ const ExtensionCard = ({ extension, onToggle, removeExtension }) => {
       </div>
       <div className='extension__action-container'>
         <button onClick={() => removeExtension(extension.name)}>Remove</button>
-        <label class="switch">
+        <label className="switch">
           <input
             type="checkbox"
             checked={extension.isActive}

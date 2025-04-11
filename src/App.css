@@ -2,9 +2,8 @@
   --gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
   --text-color: hsl(227, 75%, 14%);
   --text-color-p: hsl(226, 11%, 37%);
-
   /* background for elements */
-  --background:hsl(200, 60%, 99%);
+  --background: hsl(200, 60%, 99%);
   --secondary-background: hsl(0, 0%, 100%);
   --dark-red: hsl(3, 77%, 44%);
   --medium-red: hsl(3, 71%, 56%);
@@ -14,7 +13,7 @@
 
 [data-theme="dark"] {
   --gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
- --text-color-p:hsl(217, 61%, 90%);
+  --text-color-p: hsl(217, 61%, 90%);
   --text-color: hsl(0, 0%, 93%);
   --background: hsl(226, 25%, 17%);
   --secondary-background: hsl(225, 23%, 24%);
@@ -26,12 +25,6 @@
   color: var(--text-color);
   min-height: 100vh;
   padding: 3rem 8rem;
-}
-
-.test{
-    background-color: var(--secondary-background);
-    width: 300px;
-    height: 300px;
 }
 
 @media (max-width: 1200px) {

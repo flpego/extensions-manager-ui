@@ -1,4 +1,3 @@
-import "../styles/ExtensionFilter.css"
 const ExtensionFilter = ({setFilter, filter}) => {
   return (
     <div className="extension-filter__container">
